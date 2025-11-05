@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        header{
+            display:flex;   
+        }
+        div{
+            margin:10px;
+            border:1px solid black;
+        }
+        header img{
+            
+            width:100px;
+            height: auto;
+            border:1px solid black;
+        }
+        nav{
+            margin-top: 10px;
+            display: flex;
+            flex-direction:row ;
+            list-style: none;
+            padding:10px;
+            border:1px solid black;
+        }
+        li a{
+            text-decoration: none;
+            color: rgb(47, 92, 131);
+            margin:20px;
+        }
+        ul {
+            padding:20px;
+        }
+      
+        a:hover{
+            text-decoration:underline;
+        }
+        .aside-left{
+            display:flex;
+            flex-direction: column;
+            flex:3;
+            padding:10px;
+        }
+         img{
+            width:100%;
+            height:auto;
+        }
+        h3 p{
+            margin-left: 30px;
+        }
+        .aside-right{
+            display: flex;
+            
+        }
+        .content{
+            display:flex;
+        }
+ 
+        .right-pos{
+            flex-direction: column;
+            flex:2;
+        }
+        .im-st{
+            
+            align-content: stretch; 
+            justify-content: center;
+            align-items: center;
+
+        }
+        .pic{
+           
+            padding:10px;
+            width:120px;
+            height:150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header> <img src="inyan.png"></header>
+    <nav>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </nav>
+    <div class="content">
+    <div class="aside-left">
+        <h2>Japan</h2>
+        <img src="wp8260099.jpg">
+        <p>
+            Japan[a] is an island country in East Asia. 
+            Located in the Pacific Ocean off the northeast coast of the
+             Asian mainland, it is bordered to the west by the Sea of 
+             Japan and extends from the Sea of Okhotsk in the north to
+              the East China Sea in the south. The Japanese archipelago
+               consists of four major islands alongside 14,121 smaller 
+               islands. Divided into 47 administrative prefectures and eight
+                traditional regions, about 75% of the country's terrain is 
+                mountainous and heavily forested, concentrating its agriculture
+                 and highly urbanized population along its eastern coastal plains. With a population of over 123 million as of 2025, it is the 11th most populous country. The country's capital and largest city is Tokyo.
+        </p>
+    </div>
+    <div class="right-pos">
+    <div class="aside-right">
+        <ul>The 5 best places to visit in Japan:
+            <li>Tokyo</li>
+            <li>Osaka</li>
+            <li>Kyoto</li>
+            <li>Mt Fuji</li>
+            <li>Yakushima</li>
+        </ul>
+    </div>
+    <div class="aside-right">
+        <div class="im-st">
+            <img src="kyoto.png" class="pic">
+            <img src="tokyo.png" class="pic">
+            <img src="osaka.png" class="pic">
+            <img src="yakushima.png" class="pic">
+            <img src="jap.png" class="pic">
+            <img src="fish.png" class="pic">
+            <img src="stat.png" class="pic">
+            <img src="cats.png" class="pic">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
