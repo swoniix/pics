@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+           font-family:Verdana, Geneva, Tahoma, sans-serif
         }
         header{
             display:flex;   
@@ -56,7 +56,7 @@
         }
         .aside-right{
             display: flex;
-            
+             flex-direction: column;
         }
         .content{
             display:flex;
@@ -67,18 +67,24 @@
             flex:2;
         }
         .im-st{
-            
-            align-content: stretch; 
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-
-        }
-        .pic{
+            margin:0;
+            padding:0;
            
+        }
+     
+        .pic{
             padding:10px;
             width:120px;
             height:150px;
             
+        }
+        h3{
+            display: flex ;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -119,6 +125,7 @@
         </ul>
     </div>
     <div class="aside-right">
+        <h3>Cities</h3>
         <div class="im-st">
             <img src="kyoto.png" class="pic">
             <img src="tokyo.png" class="pic">
