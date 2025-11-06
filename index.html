@@ -6,20 +6,21 @@
     <title>Document</title>
     <style>
         body{
-           font-family:Verdana, Geneva, Tahoma, sans-serif
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           background-image:url("wp8260099.jpg");
         }
         header{
             display:flex;   
         }
         div{
             margin:10px;
-            border:1px solid black;
+            /* border:1px solid black; */
         }
         header img{
             
-            width:100px;
+            width:150px;
             height: auto;
-            border:1px solid black;
+            /* border:1px solid black; */
         }
         nav{
             margin-top: 10px;
@@ -27,36 +28,49 @@
             flex-direction:row ;
             list-style: none;
             padding:10px;
-            border:1px solid black;
+            border:2px solid rgb(124, 36, 49, 0.8);
+            border-radius: 10px;
+            background-color: rgb(124, 36, 49, 0.6);
+            
         }
         li a{
             text-decoration: none;
-            color: rgb(47, 92, 131);
+            color: rgb(255, 255, 255);
             margin:20px;
         }
         ul {
             padding:20px;
         }
-      
+        ul li{
+            margin-left:50px;
+            padding:5px;
+        }
         a:hover{
             text-decoration:underline;
         }
         .aside-left{
+            color:white;
             display:flex;
             flex-direction: column;
             flex:3;
             padding:10px;
+            background-color: rgb(124, 36, 49, 0.6);
+            border-radius: 10px;
         }
          img{
             width:100%;
             height:auto;
+            border-radius: 10px;
         }
         h3 p{
             margin-left: 30px;
         }
         .aside-right{
+            color:white;
             display: flex;
              flex-direction: column;
+             background-color: rgb(124, 36, 49, 0.6);
+             border-radius: 10px;
         }
         .content{
             display:flex;
@@ -72,7 +86,7 @@
             align-items: center;
             margin:0;
             padding:0;
-           
+          
         }
      
         .pic{
@@ -86,11 +100,20 @@
             justify-content: center;
             align-items: center;
         }
+        footer{
+            display:flex;   
+            background-color: rgb(124, 36, 49, 0.6);
+            border: 1px solid rgba(124, 32, 47, 0.8);
+            border-radius: 10px ;
+            padding:10px;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <div>
-        <header> <img src="inyan.png"></header>
+        <header> <img src="Japan-PNG-File.png"></header>
     <nav>
         <li><a href="#">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
@@ -139,6 +162,9 @@
     </div>
 </div>
 </div>
+<footer>
+    Japan 2023
+</footer>
 </div>
 </body>
 </html>
