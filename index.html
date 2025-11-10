@@ -1,170 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-           font-family:Verdana, Geneva, Tahoma, sans-serif;
-           background-image:url("wp8260099.jpg");
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url("wp8260099.jpg");
+            background-repeat: no-repeat;
         }
-        header{
-            display:flex;   
-        }
-        div{
-            margin:10px;
+
+        div {
+            margin: 10px;
             /* border:1px solid black; */
         }
-        header img{
-            
-            width:150px;
+
+        header img {
+
+            width: 150px;
             height: auto;
             /* border:1px solid black; */
         }
-        nav{
-            margin-top: 10px;
+
+        nav {
             display: flex;
-            flex-direction:row ;
+            flex-direction: row;
+            align-items: center;
             list-style: none;
-            padding:10px;
-            border:2px solid rgb(124, 36, 49, 0.8);
+            padding: 10px;
             border-radius: 10px;
             background-color: rgb(124, 36, 49, 0.6);
-            
+            margin: auto;
         }
-        li a{
+
+        a {
             text-decoration: none;
             color: rgb(255, 255, 255);
-            margin:20px;
+            margin-left: 10px;
         }
-        ul {
-            padding:20px;
+
+        a:hover {
+            text-decoration: underline;
         }
-        ul li{
-            margin-left:50px;
-            padding:5px;
+
+        .aside-left {
+            display: inline-block;
+            color: white;
+            padding: 10px;
+            background-color: rgb(124, 36, 49, 0.6);
+            border-radius: 10px;
+            flex: 3;
+            gap: 10px;
+            margin: 20px 0 20px 0;
         }
-        a:hover{
-            text-decoration:underline;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
-        .aside-left{
-            color:white;
-            display:flex;
+
+        h3 p {
+            margin-left: 30px;
+        }
+
+        .aside-right {
+            color: white;
+            display: flex;
             flex-direction: column;
-            flex:3;
-            padding:10px;
+            background-color: rgb(124, 36, 49, 0.6);
+            border-radius: 10px;
+            flex: 2;
+        }
+
+        .best-places {
+            color: white;
+            display: flex;
+            flex-direction: column;
             background-color: rgb(124, 36, 49, 0.6);
             border-radius: 10px;
         }
-         img{
-            width:100%;
-            height:auto;
-            border-radius: 10px;
-        }
-        h3 p{
-            margin-left: 30px;
-        }
-        .aside-right{
-            color:white;
+
+        .content {
             display: flex;
-             flex-direction: column;
-             background-color: rgb(124, 36, 49, 0.6);
-             border-radius: 10px;
+            /* контролируем расстояние */
+            max-width: 1200px;
+            /* фиксируем ширину контента */
+            margin: auto;
         }
-        .content{
-            display:flex;
-        }
- 
-        .right-pos{
+
+        .right-pos {
             flex-direction: column;
-            flex:2;
+            flex: 2;
         }
-        .im-st{
+
+        .im-st {
+            display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin:0;
-            padding:0;
-          
+            padding-bottom: 20px;
         }
-     
-        .pic{
-            padding:10px;
-            width:120px;
-            height:150px;
-            
+
+        .pic {
+            margin: 6px;
+            width: 100px;
+            height: 100px;
         }
-        h3{
-            display: flex ;
+
+        h3 {
+            display: flex;
             justify-content: center;
             align-items: center;
         }
-        footer{
-            display:flex;   
+
+        footer {
+            display: flex;
             background-color: rgb(124, 36, 49, 0.6);
             border: 1px solid rgba(124, 32, 47, 0.8);
-            border-radius: 10px ;
-            padding:10px;
+            border-radius: 10px;
+            padding: 10px;
             color: white;
         }
 
+        .search {
+            margin-left: auto;
+            padding: 10px 10px;
+            border-radius: 4px;
+        }
+
+        .text {
+
+            border: 2px solid rgb(124, 36, 49, 0.8);
+            border-radius: 10px;
+            background-color: rgb(124, 36, 49, 0.6);
+        }
+
+        @media (max-width: 700px) {
+
+            .search {
+                margin-bottom: 100px;
+            }
+        }
+
+        @media(max-width:320px) {
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .best-places {
+                display: none;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .right-pos {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .aside-left,
+            .aside-right {
+                width: 100%;
+            }
+
+            .aside-left,
+            .aside-right .im-st {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
     </style>
 </head>
+
 <body>
     <div>
-        <header> <img src="Japan-PNG-File.png"></header>
-    <nav>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">CONTACT</a></li>
-    </nav>
-    <div class="content">
-    <div class="aside-left">
-        <h2>Japan</h2>
-        <img src="wp8260099.jpg">
-        <p>
-            Japan[a] is an island country in East Asia. 
-            Located in the Pacific Ocean off the northeast coast of the
-             Asian mainland, it is bordered to the west by the Sea of 
-             Japan and extends from the Sea of Okhotsk in the north to
-              the East China Sea in the south. The Japanese archipelago
-               consists of four major islands alongside 14,121 smaller 
-               islands. Divided into 47 administrative prefectures and eight
-                traditional regions, about 75% of the country's terrain is 
-                mountainous and heavily forested, concentrating its agriculture
-                 and highly urbanized population along its eastern coastal plains. With a population of over 123 million as of 2025, it is the 11th most populous country. The country's capital and largest city is Tokyo.
-        </p>
-    </div>
-    <div class="right-pos">
-    <div class="aside-right">
-        <ul>The 5 best places to visit in Japan:
-            <li>Tokyo</li>
-            <li>Osaka</li>
-            <li>Kyoto</li>
-            <li>Mt Fuji</li>
-            <li>Yakushima</li>
-        </ul>
-    </div>
-    <div class="aside-right">
-        <h3>Cities</h3>
-        <div class="im-st">
-            <img src="kyoto.png" class="pic">
-            <img src="tokyo.png" class="pic">
-            <img src="osaka.png" class="pic">
-            <img src="yakushima.png" class="pic">
-            <img src="jap.png" class="pic">
-            <img src="fish.png" class="pic">
-            <img src="stat.png" class="pic">
-            <img src="cats.png" class="pic">
+        <header> <img src="Japan-PNG-File.png">
+        </header>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACT</a>
+            <!-- <div class="search">
+                <input type="search" placeholder="search...">
+            </div> -->
+        </nav>
+        <div class="content">
+            <div class="aside-left">
+                <h2>Japan</h2>
+                <img src="wp8260099.jpg">
+                <p>
+                    Japan[a] is an island country in East Asia.
+                    Located in the Pacific Ocean off the northeast coast of the
+                    Asian mainland, it is bordered to the west by the Sea of
+                    Japan and extends from the Sea of Okhotsk in the north to
+                    the East China Sea in the south. The Japanese archipelago
+                    consists of four major islands alongside 14,121 smaller
+                    islands. Divided into 47 administrative prefectures and eight
+                    traditional regions, about 75% of the country's terrain is
+                    mountainous and heavily forested, concentrating its agriculture
+                    and highly urbanized population along its eastern coastal plains. With a population of over 123
+                    million as of 2025, it is the 11th most populous country. The country's capital and largest city is
+                    Tokyo.
+                </p>
+            </div>
+            <div class="right-pos">
+                <div class="best-places">
+                    <ul>The 5 best places to visit in Japan:
+                        <li>Tokyo</li>
+                        <li>Osaka</li>
+                        <li>Kyoto</li>
+                        <li>Mt Fuji</li>
+                        <li>Yakushima</li>
+                    </ul>
+                </div>
+                <div class="aside-right">
+                    <h3>Cities</h3>
+                    <div class="im-st">
+                        <img src="kyoto.png" class="pic">
+                        <img src="tokyo.png" class="pic">
+                        <img src="osaka.png" class="pic">
+                        <img src="yakushima.png" class="pic">
+                        <img src="jap.png" class="pic">
+                        <img src="fish.png" class="pic">
+                        <img src="stat.png" class="pic">
+                        <img src="cats.png" class="pic">
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer>
+            Japan 2023
+        </footer>
     </div>
-</div>
-</div>
-<footer>
-    Japan 2023
-</footer>
-</div>
 </body>
+
 </html>
